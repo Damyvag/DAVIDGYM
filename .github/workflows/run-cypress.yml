@@ -1,24 +1,26 @@
 name: Run Cypress on Wednesday
 
 on:
+  # Permite ejecutar el workflow de forma manual
+  workflow_dispatch:
+
+  # Configuración para que se ejecute automáticamente cada miércoles
   schedule:
-    # Programa para ejecutar cada miércoles a las 14:00 hora española (CET)
-    - cron: "0 13 * * 3" # Hora en UTC (14:00 CET corresponde a 13:00 UTC)
+    - cron: "5 13 * * 3"
 
 jobs:
   run-cypress:
     runs-on: ubuntu-latest
-
     steps:
       # Step 1: Checkout el código del repositorio
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Instala Node.js
-      - name: Setup Node.js
+      # Step 2: Configura Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18" # Usa la versión que necesites
+          node-version: "16" # Cambia la versión si es necesario
 
       # Step 3: Instala las dependencias
       - name: Install dependencies
