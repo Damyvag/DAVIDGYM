@@ -18,12 +18,13 @@ describe('Wednesday Page', () => {
     cy.get(':nth-child(4) > .btn').click();
 
     //Go to Activitats dirigides
-    cy.get(
-      '[href="/cat/poliwin/groupclasses/2025-12-02/d41d8cd98f00b204e9800998ecf8427e"]'
-    ).click();
+    cy.get('[href*="d41d8cd98f00b204e9800998ecf8427e"]').click();
 
     //Select Friday Bodypump 17:15
-    cy.get('[id*="1715_72"]').click();
+    // cy.get('[id*="1715_72"]').click();
+
+    //Select Friday Les mills core
+    cy.get('[id*="1830_21"]').click();
 
     //Accept popup
     cy.get('#Reservar').click();
