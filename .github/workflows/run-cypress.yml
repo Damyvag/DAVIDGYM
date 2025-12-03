@@ -6,7 +6,7 @@ on:
 
   # Configuración para que se ejecute automáticamente cada miércoles
   schedule:
-    - cron: "15 13 * * 3"
+    - cron: "22 13 * * 3"
 
 jobs:
   run-cypress:
