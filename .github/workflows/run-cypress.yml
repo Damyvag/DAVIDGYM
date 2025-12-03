@@ -6,8 +6,8 @@ on:
 
   # Configuración para que se ejecute automáticamente cada miércoles
   schedule:
-    - cron: '25 14 * * 3'
-    #- cron: "0 * * * *" # Cada hora
+    - cron: '30 15 * * 3' 
+    
 permissions:
   contents: read
 
@@ -23,7 +23,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "16" # Cambia la versión si es necesario
+          node-version: "16" 
 
       # Step 3: Instala las dependencias
       - name: Install dependencies
