@@ -8,6 +8,8 @@ on:
   schedule:
     - cron: '18 14 * * 3'
     #- cron: "0 * * * *" # Cada hora
+permissions:
+  contents: read
 
 jobs:
   run-cypress:
