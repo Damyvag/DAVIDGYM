@@ -6,7 +6,7 @@ on:
 
   # Configuración para que se ejecute automáticamente cada miércoles a las 00:02
   schedule:
-    - cron: "6 23 * * 2"
+    - cron: "2 23 * * 5"
 
 permissions:
   contents: read
