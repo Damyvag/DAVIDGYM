@@ -21,7 +21,7 @@ describe("Wednesday Page", () => {
     cy.get('[href*="d41d8cd98f00b204e9800998ecf8427e"]').click();
 
     //Select Next Week
-    cy.get('[class="next"]').click();
+    cy.get('.d-none > .filters > :nth-child(1) > .ml-auto > .box-filter > .row > .text-right > .next').click();
 
     //Select Monday Bodypump 17:15
     cy.get('[id*="1715_7"]').click();
