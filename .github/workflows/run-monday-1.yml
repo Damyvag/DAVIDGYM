@@ -31,4 +31,4 @@ jobs:
 
       # Step 4: Ejecuta el test de Cypress
       - name: Run Cypress
-        run: npx cypress run --spec "cypress/e2e/monday.spec.js"
+        run: npx cypress run --spec "cypress/e2e/monday-1.spec.js"
