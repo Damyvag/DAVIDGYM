@@ -20,11 +20,11 @@ describe("Saturday Page", () => {
     //Go to Activitats dirigides
     cy.get('[href*="d41d8cd98f00b204e9800998ecf8427e"]').click();
 
-    //Select Friday Bodypump 17:15
-    cy.get('[id*="1715_72"]').click();
+    //Go to Següent setmana
+    cy.get('[id*="col-2.text-right"]').click();
 
-    //Select Friday Les mills core
-    //cy.get('[id*="1830_21"]').click();
+    //Select Tuesday Trainning 18:15
+    cy.get('[id*="1815_11"]').click();
 
     //Accept popup
     cy.get("#Reservar").click();
@@ -33,4 +33,5 @@ describe("Saturday Page", () => {
     cy.get("#Tancar").click();
   });
 });
+
 
