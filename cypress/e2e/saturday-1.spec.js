@@ -1,4 +1,4 @@
-describe("Wednesday Page", () => {
+describe("Saturday Page", () => {
   it("should schedule a wednesday class", () => {
     cy.visit("/");
     //Add name
@@ -33,3 +33,4 @@ describe("Wednesday Page", () => {
     cy.get("#Tancar").click();
   });
 });
+
