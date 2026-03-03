@@ -1,4 +1,4 @@
-name: Run Cypress on Wednesday
+name: Run Cypress on Saturday
 
 on:
   # Permite ejecutar el workflow de forma manual
@@ -31,4 +31,4 @@ jobs:
 
       # Step 4: Ejecuta el test de Cypress
       - name: Run Cypress
-        run: npx cypress run --spec "cypress/e2e/wednesday-1.spec.js"
+        run: npx cypress run --spec "cypress/e2e/saturday-1.spec.js"
